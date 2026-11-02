@@ -16,6 +16,16 @@
 
 Matching the architecture and ecosystem quality of Away3D for OpenFL, this library provides a high-performance 3D scene graph, modular shader pipeline (`Shader3D` / AGAL / FLSL), geometric primitives, spatial collisions, multi-surface skeletal animation deformation, and post-processing effects. Fully compatible with **HTML5 (WebGL)** and native desktop platforms (**Windows / macOS / Linux** via C++ / OpenGL / DirectX).
 
+### 🎮 Game Showcase: Yellow Planet 3D (`samples/02_yellow_planet`)
+
+<p align="center">
+  <img src="docs/screenshots/yellow_planet_gameplay.png" alt="Yellow Planet Gameplay" width="49%">
+  <img src="docs/screenshots/yellow_planet_start.png" alt="Yellow Planet Start Screen" width="49%">
+</p>
+<p align="center">
+  <em>The classic 3D action game "Yellow Planet" ported to Flare3D for OpenFL, featuring spherical planetary gravity, skeletal animation state machines, particle systems, and hardware-accelerated Stage3D shaders.</em>
+</p>
+
 ### Key Features
 
 1. **High-Performance 3D Scene Graph**: Hierarchical `Pivot3D` transformation tree with complete support for translation, rotation, scaling, quaternions, and Euler angles.
@@ -108,6 +118,16 @@ class Main extends Sprite {
 **Flare3D for OpenFL** 是经典 Stage3D 3D 游戏引擎 Flare3D 在现代 **Haxe 4** 与 **OpenFL 9.5+** 平台上的工业级开源移植实现。
 
 本库对标 [Away3D for OpenFL](https://lib.haxe.org/p/away3d/) 的架构与生态标准，提供高效的 3D 场景图系统、可插拔着色器材质（`Shader3D` / AGAL / FLSL）、几何图元生成、空间物理碰撞、多表面骨骼蒙皮动画支持以及完备的后处理特效管线，全面适配 **HTML5 (WebGL)** 及 **Windows / macOS / Linux** 桌面原生平台 (C++ / OpenGL / DirectX)。
+
+### 🎮 游戏案例演示：Yellow Planet 3D (`samples/02_yellow_planet`)
+
+<p align="center">
+  <img src="docs/screenshots/yellow_planet_gameplay.png" alt="Yellow Planet 游戏截图" width="49%">
+  <img src="docs/screenshots/yellow_planet_start.png" alt="Yellow Planet 开始界面" width="49%">
+</p>
+<p align="center">
+  <em>图：经典 3D 动作游戏《Yellow Planet》在 Flare3D for OpenFL 上运行效果，包含球体表面引力物理、骨骼蒙皮动画状态机、粒子特效与硬件加速 Stage3D 材质管线。</em>
+</p>
 
 ### 特性亮点
 
