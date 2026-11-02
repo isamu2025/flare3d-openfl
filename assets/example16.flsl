@@ -1,0 +1,54 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Reflection and refraction maps.
+ */
+
+// import build-in namespaces.
+use namespace flare.transforms;
+
+float4 chromaticRefraction( samplerCube texture, float3 eta ) 
+{
+	input POSITION position;
+	input NORMAL normal;
+	
+	param WORLD world;
+	param WORLD_VIEW_PROJ wvp;
+	param CAM_POS camPos;
+	
+	param float fresnelBias <order=1> = 0;
+	param float fresnelScale <order=2> = 5;
+	param float fresnelPower <order=3> = 2;
+	
+	float3 v = normalize( (position.xyzw * world).xyz - camPos );
+	float3 n = normalize( normal * world.xyz );
+	
+	interpolated float3 iRed = refract( v, n, eta.x );
+	interpolated float3 iGreen = refract( v, n, eta.y );
+	interpolated float3 iBlue = refract( v, n, eta.z );
+	interpolated float3 iReflection = reflect( v, n );
+	interpolated float reflectionFactor = fresnelBias + fresnelScale * pow( 1 + dot( v, n ), fresnelPower );
+	
+	float4 refractedColor;
+	refractedColor.r = samplerCube( texture, iRed ).r;
+	refractedColor.g = samplerCube( texture, iGreen ).g;
+	refractedColor.b = samplerCube( texture, iBlue ).b;
+	refractedColor.a = 1;
+	
+	float4 reflectedColor = samplerCube( texture, iReflection );
+	
+	return lerp( refractedColor, reflectedColor, reflectionFactor );
+}
+
+technique main
+{
+	samplerCube cubeMap < request = "skybox2b.png" >;
+
+	param float4 ratios = float4( 0.87, 0.88, 0.89, 1 );
+	param float4 color <ui="color"> = float4( 1, 0.9, 0.8, 0.7 );
+	
+	output vertex = transform();
+	output fragment = chromaticRefraction( cubeMap, ratios.xyz ) * color;
+	output sourceFactor = "sourceAlpha";
+	output destFactor = "oneMinusSourceAlpha";
+}

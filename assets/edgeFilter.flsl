@@ -1,0 +1,22 @@
+/**
+ * @author Ariel Nehmad
+ */
+
+use namespace flare; 
+use namespace flare.transforms;
+use namespace flare.filters;
+
+param float edge = 1;
+param float4 color = 1;
+
+technique main
+{
+	pass p1 {
+		// ignore pass 1.
+	}
+	pass p2 {
+		output vertex = float4( vwPosition + vwNormal * edge, 1 ) * viewProj;
+		output fragment = color;
+		output cullFace = "front"
+	}
+}

@@ -1,0 +1,35 @@
+# Compilation output
+bin/
+*/bin/
+**/bin/
+examples/bin/
+samples/*/bin/
+obj/
+export/
+*.swf
+*.air
+*.n
+*.hl
+*.exe
+
+# IDE files
+.vscode/
+.idea/
+*.hxproj
+*.as3proj
+
+# Haxe / Haxelib
+.haxelib/
+.temp/
+
+# OS metadata
+Thumbs.db
+.DS_Store
+
+# Temporary scratch / debug
+scratch/
+*.log
+*.zip
+examples/*.png
+examples/*.log
+examples/render_verify.py

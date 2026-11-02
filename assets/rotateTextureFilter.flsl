@@ -1,0 +1,22 @@
+
+use namespace flare; 
+use namespace flare.transforms; 
+use namespace flare.filters; 
+
+technique main 
+{ 
+	sampler2D texture; 
+	
+	param float3 angles;
+	param float2 offset = 0.5;	
+	
+	float2 uv = uv0 - offset;
+	
+	float2 r;
+	r.x = ( uv.x * angles.x + uv.y * angles.z ); 
+	r.y = ( uv.x * angles.y + uv.y * angles.x ); 
+	
+	interpolated float2 iuv = r + offset;
+	
+	output fragment = sampler2D( texture, iuv ); 
+}

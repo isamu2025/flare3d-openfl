@@ -1,0 +1,87 @@
+/**
+ * @author Ariel Nehmad
+ */
+
+use namespace flare;
+use namespace flare.filters;
+use namespace flare.transforms;
+
+// defines the distance of the dof.
+param float2 nearFar = float2( 20, 100 );
+// try values near to 1 or values > 1 to produce some kind of glow/bloom/saturation.
+param float attenuation = 1.0;
+
+// simple depth pass.
+technique depth {
+	
+	float depth() 
+	{
+		// multiply the world position * view matrix and interpolate the value
+		// to the fragment shader.
+		interpolated float iDepth = ( dot( float4(vwPosition, 1), view[2] ) - nearFar.x ) / ( nearFar.y - nearFar.x );
+		return iDepth;
+	}
+	
+	output vertex = transform();
+	output fragment = depth();
+}
+
+// ======================================================================= //
+
+// blur constants.
+#define TEX_SIZE 512;
+const float blurSize = 1 / TEX_SIZE;
+const float2 hSize = float2( blurSize, 0 );
+const float2 vSize = float2( 0, blurSize );
+
+// horizontal blur.
+float4 blurX( sampler2D texture ) {
+	float4 sum;
+	interpolated float2 i0 = uv0 - hSize;
+	interpolated float2 i1 = uv0 + hSize;
+	sum  = sampler2D( texture, i0 );
+	sum += sampler2D( texture, i1 );
+	return float4( sum.rgb * 0.5, 1 );
+}
+
+// vertical blur.
+float4 blurY( sampler2D texture ) {
+   float4 sum;
+   interpolated float2 i0 = uv0 - vSize;
+   interpolated float2 i1 = uv0 + vSize;
+   sum  = sampler2D( texture, i0 );
+   sum += sampler2D( texture, i1 );
+   return float4( sum.rgb * 0.5, 1 );
+}
+
+// depth of field pass.
+technique dof 
+{
+	// we'll set here the depth texture.
+	sampler2D depthTexture;
+	// this is the scene rendered into at texture.
+	sampler2D sceneTexture < bias = 8, wrap = WRAP_CLAMP >
+	// temporal texture used for the blur.
+	sampler2D blurH < bias = 8, width = 512, height = 512, optimizeForRenderToTexture = true >;
+
+	// the result will be mixed with the main scene render.
+	output depthWrite = false;
+	output depthCompare = "always";
+	
+	// the blurred scene texture will be multiplied by the depth value.
+	// as a result, we'll get higher alpha values in zones that ar far from the camera, and low
+	// alpha values in zones near to the camera, 
+	// allowing us to see the main render behind the dof pass.
+	output sourceFactor = "one";
+	output destFactor = "oneMinusSourceAlpha";
+	
+	pass dof_p0 {
+		output target = blurH;
+		output vertex = position.xyzw;
+		output fragment = blurX( sceneTexture );
+	}
+	pass dof_p1 {
+		output vertex = position.xyzw;
+		output fragment = blurY( blurH ) * textureMap( depthTexture ).a * attenuation;
+	}
+}

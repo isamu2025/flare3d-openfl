@@ -1,0 +1,12 @@
+
+use namespace flare;
+use namespace flare.filters;
+use namespace flare.transforms;
+
+technique main
+{
+	sampler2D texture <request = "reflections.jpg">;
+	param float eta = 0.5;
+	output vertex = transform();
+	output fragment = perPixelRefractionMap( texture, eta );
+}

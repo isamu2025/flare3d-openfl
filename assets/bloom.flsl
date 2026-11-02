@@ -1,0 +1,26 @@
+/**
+ * @author Ariel Nehmad
+ */
+
+use namespace flare;
+use namespace flare.filters;
+use namespace flare.transforms;
+
+param float power = 2;
+param float intensity = 2;
+
+// source texture.
+// the bias value does a simple blur magic!.
+sampler2D bloomTexture < bias = 45, wrap = WRAP_CLAMP >;
+
+// set the blending additive.
+output depthCompare = "always";
+output sourceFactor = "one";
+output destFactor = "one";
+output depthWrite = false;
+
+technique main {
+	
+	output vertex = transform();
+	output fragment = pow( textureMap ( bloomTexture ), power ) * intensity;
+}

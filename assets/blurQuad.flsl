@@ -1,0 +1,18 @@
+
+use namespace flare;
+use namespace flare.transforms;
+use namespace flare.filters;
+
+param sampler2D texture <mip = MIP_NONE, wrap = WRAP_CLAMP>;
+param float alpha = 0.8;
+
+technique main 
+{
+	// nothing special here...just a quad with alpha.
+	output depthWrite = false;
+	output depthCompare = "always";
+	output sourceFactor = "sourceAlpha";
+	output destFactor = "oneMinusSourceAlpha";
+	output vertex = position.xyzw;
+	output fragment = float4( sampler2D( texture, iUV0 ).rgb, alpha );
+}

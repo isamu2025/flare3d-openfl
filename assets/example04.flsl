@@ -1,0 +1,23 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Parameters and constants.
+ * 
+ * Parameters can be externally changed at any time, but uses a full (float4) register. 
+ * Constants can not be changed outside the shader, but are automatically grouped; for ex. two const float2 takes only one register.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+
+technique main() 
+{
+	// this can be changed outside the shader.
+	param float4 color <ui = "color"> = float4( 0.5, 0.25, 0, 1 );
+	
+	// this can not be changed outside.
+	const float factor = 2;
+	
+	output vertex = transform();
+	output fragment = color * factor;
+}

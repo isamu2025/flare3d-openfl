@@ -1,0 +1,32 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Render to texture / render target.
+ */
+
+use namespace flare.filters;
+use namespace flare.transforms;
+
+technique main()
+{
+	// define our render target texture.
+	sampler2D renderTarget < optimizeForRenderToTexture = true, width = 256, height = 256 >;
+	
+	pass p0 
+	{
+		sampler2D texture < request = "clay4.png" >; 
+		
+		// render this pass on the target texture.
+		output target = renderTarget;
+		output vertex = transform();
+		output fragment = envMap( texture );
+	}
+	
+	pass p1
+	{
+		output vertex = transform();
+		// this pass just renders normally 
+		// using the already updated target texture.
+		output fragment = textureMap( renderTarget );
+	}
+}

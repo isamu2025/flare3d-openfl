@@ -1,0 +1,21 @@
+
+use namespace flare;
+use namespace flare.blendMode;
+use namespace flare.transforms;
+use namespace flare.filters;
+ 
+// scene.targetTexture is passed directly by the engine.
+TARGET_TEXTURE buffer;
+ 
+param float numColors = 8.0;
+ 
+technique main
+{
+	float4 color = textureMap( buffer );
+	color = color * numColors;
+	color = floor( color );
+	color = color / numColors;
+ 
+	output vertex = transform();
+	output fragment = float4( color.rgb, 1.0 );
+}

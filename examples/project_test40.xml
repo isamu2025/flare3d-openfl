@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - Test40 RenderToBitmapData" package="com.flare3d.examples.test40" version="1.0.0" company="Flare3D" />
+	<app main="examples.Test40_RenderToBitmapData" file="Test40" path="bin" />
+	
+	<window width="1024" height="525" fps="60" background="#505050" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="../src" />
+	<source path=".." />
+	<source path="." />
+	
+	<assets path="../assets" rename="." embed="false" />
+	
+	<haxelib name="openfl" />
+</project>

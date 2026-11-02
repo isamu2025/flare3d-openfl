@@ -1,0 +1,760 @@
+<f3d version="1">
+  <camera id="1" name="Camera" type="camera" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.7628735303878784,-6.25686880084686e-9,0.6465468406677246,-0.28217247128486633,0.8997382521629333,0.3329414427280426,-0.5817232728004456,-0.4364313781261444,0.6863860487937927,204.1983184814453,153.1973876953125,-240.93748474121094" fov="75" nearclip="1" farclip="100000" active="true"/>
+  <lights techniqueName="sampled" ambientColor="58,58,58" dirLights="1" pointLights="4" useDefault="true"/>
+  <animations/>
+  <modifiers/>
+  <surfaces>
+    <surface id="6" source="6" name="0" sizePerVertex="10" firstIndex="0" numTriangles="12" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="14" source="14" name="1" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="22" source="22" name="2" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="30" source="30" name="3" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="38" source="38" name="4" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="46" source="46" name="5" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="54" source="54" name="6" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="62" source="62" name="7" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="70" source="70" name="8" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="78" source="78" name="9" sizePerVertex="10" firstIndex="0" numTriangles="2256" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="86" source="86" name="10" sizePerVertex="10" firstIndex="0" numTriangles="2256" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="94" source="94" name="11" sizePerVertex="10" firstIndex="0" numTriangles="2032" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="102" source="102" name="12" sizePerVertex="10" firstIndex="0" numTriangles="1792" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="110" source="110" name="13" sizePerVertex="10" firstIndex="0" numTriangles="812" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="118" source="118" name="14" sizePerVertex="10" firstIndex="0" numTriangles="1792" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="126" source="126" name="15" sizePerVertex="10" firstIndex="0" numTriangles="812" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="134" source="134" name="16" sizePerVertex="10" firstIndex="0" numTriangles="2480" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="142" source="142" name="17" sizePerVertex="10" firstIndex="0" numTriangles="224" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="150" source="150" name="18" sizePerVertex="10" firstIndex="0" numTriangles="2480" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="158" source="158" name="19" sizePerVertex="10" firstIndex="0" numTriangles="224" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="166" source="166" name="20" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="174" source="174" name="21" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="182" source="182" name="22" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="190" source="190" name="23" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="198" source="198" name="24" sizePerVertex="10" firstIndex="0" numTriangles="224" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="206" source="206" name="25" sizePerVertex="10" firstIndex="0" numTriangles="2480" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="214" source="214" name="26" sizePerVertex="10" firstIndex="0" numTriangles="224" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="222" source="222" name="27" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="230" source="230" name="28" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="238" source="238" name="29" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="246" source="246" name="30" sizePerVertex="10" firstIndex="0" numTriangles="16" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="254" source="254" name="31" sizePerVertex="10" firstIndex="0" numTriangles="224" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="262" source="262" name="32" sizePerVertex="10" firstIndex="0" numTriangles="1792" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="270" source="270" name="33" sizePerVertex="10" firstIndex="0" numTriangles="812" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+    <surface id="278" source="278" name="34" sizePerVertex="10" firstIndex="0" numTriangles="232" inputs="POSITION,NORMAL,UV0,UV2" formats="float3,float3,float2,float2"/>
+  </surfaces>
+  <splines/>
+  <maps>
+    <map id="9" type="2d" source="gms00103.jpg"/>
+    <map id="12" type="cube" source="skybox2.png"/>
+    <map id="17" type="2d" source="gms00102.jpg"/>
+    <map id="20" type="cube" source="skybox2.png"/>
+    <map id="25" type="2d" source="gms00102.jpg"/>
+    <map id="28" type="cube" source="skybox2.png"/>
+    <map id="33" type="2d" source="gms00102.jpg"/>
+    <map id="36" type="cube" source="skybox2.png"/>
+    <map id="41" type="2d" source="gms00102.jpg"/>
+    <map id="44" type="cube" source="skybox2.png"/>
+    <map id="49" type="2d" source="gms00102.jpg"/>
+    <map id="52" type="cube" source="skybox2.png"/>
+    <map id="57" type="2d" source="gms00101.jpg"/>
+    <map id="60" type="cube" source="skybox2.png"/>
+    <map id="65" type="2d" source="gms00101.jpg"/>
+    <map id="68" type="cube" source="skybox2.png"/>
+    <map id="73" type="2d" source="gms00101.jpg"/>
+    <map id="76" type="cube" source="skybox2.png"/>
+    <map id="81" type="2d" source="gms00101.jpg"/>
+    <map id="84" type="cube" source="skybox2.png"/>
+    <map id="89" type="2d" source="gms00101.jpg"/>
+    <map id="92" type="cube" source="skybox2.png"/>
+    <map id="97" type="2d" source="gms00101.jpg"/>
+    <map id="100" type="cube" source="skybox2.png"/>
+    <map id="105" type="2d" source="gms00101.jpg"/>
+    <map id="108" type="cube" source="skybox2.png"/>
+    <map id="113" type="2d" source="gms00101.jpg"/>
+    <map id="116" type="cube" source="skybox2.png"/>
+    <map id="121" type="2d" source="gms00102.jpg"/>
+    <map id="124" type="cube" source="skybox2.png"/>
+    <map id="129" type="2d" source="gms00102.jpg"/>
+    <map id="132" type="cube" source="skybox2.png"/>
+    <map id="137" type="2d" source="gms00102.jpg"/>
+    <map id="140" type="cube" source="skybox2.png"/>
+    <map id="145" type="2d" source="gms00101.jpg"/>
+    <map id="148" type="cube" source="skybox2.png"/>
+    <map id="153" type="2d" source="gms00102.jpg"/>
+    <map id="156" type="cube" source="skybox2.png"/>
+    <map id="161" type="2d" source="gms00101.jpg"/>
+    <map id="164" type="cube" source="skybox2.png"/>
+    <map id="169" type="2d" source="gms00101.jpg"/>
+    <map id="172" type="cube" source="skybox2.png"/>
+    <map id="177" type="2d" source="gms00101.jpg"/>
+    <map id="180" type="cube" source="skybox2.png"/>
+    <map id="185" type="2d" source="gms00101.jpg"/>
+    <map id="188" type="cube" source="skybox2.png"/>
+    <map id="193" type="2d" source="gms00101.jpg"/>
+    <map id="196" type="cube" source="skybox2.png"/>
+    <map id="201" type="2d" source="gms00101.jpg"/>
+    <map id="204" type="cube" source="skybox2.png"/>
+    <map id="209" type="2d" source="gms00101.jpg"/>
+    <map id="212" type="cube" source="skybox2.png"/>
+    <map id="217" type="2d" source="gms00102.jpg"/>
+    <map id="220" type="cube" source="skybox2.png"/>
+    <map id="225" type="2d" source="gms00102.jpg"/>
+    <map id="228" type="cube" source="skybox2.png"/>
+    <map id="233" type="2d" source="gms00102.jpg"/>
+    <map id="236" type="cube" source="skybox2.png"/>
+    <map id="241" type="2d" source="gms00102.jpg"/>
+    <map id="244" type="cube" source="skybox2.png"/>
+    <map id="249" type="2d" source="gms00102.jpg"/>
+    <map id="252" type="cube" source="skybox2.png"/>
+    <map id="257" type="2d" source="gms00102.jpg"/>
+    <map id="260" type="cube" source="skybox2.png"/>
+    <map id="265" type="2d" source="gms00101.jpg"/>
+    <map id="268" type="cube" source="skybox2.png"/>
+    <map id="273" type="2d" source="gms00101.jpg"/>
+    <map id="276" type="cube" source="skybox2.png"/>
+    <map id="281" type="2d" source="Wood_texture_2_by_AnnFrost_stock.jpg"/>
+  </maps>
+  <filters>
+    <filter id="8" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="4,4,1,1"/>
+      <sampler name="texture" type="2d" map="9" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="10" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,1.07,0,0"/>
+    </filter>
+    <filter id="11" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="12" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="16" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="17" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="18" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="19" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="20" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="24" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="25" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="26" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="27" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="28" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="32" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="33" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="34" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="35" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="36" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="40" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="41" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="42" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="43" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="44" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="48" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="49" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="50" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="51" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="52" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="56" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="57" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="58" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="59" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="60" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="64" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="65" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="66" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="67" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="68" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="72" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="73" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="74" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="75" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="76" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="80" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="81" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="82" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="83" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="84" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="88" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="89" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="90" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="91" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="92" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="96" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="97" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="98" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="99" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="100" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="104" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="105" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="106" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="107" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="108" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="112" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="113" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="114" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="115" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="116" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="120" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="121" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="122" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="123" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="124" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="128" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="129" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="130" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="131" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="132" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="136" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="137" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="138" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="139" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="140" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="144" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="145" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="146" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="147" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="148" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="152" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="153" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="154" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="155" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="156" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="160" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="161" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="162" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="163" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="164" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="168" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="169" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="170" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="171" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="172" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="176" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="177" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="178" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="179" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="180" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="184" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="185" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="186" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="187" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="188" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="192" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="193" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="194" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="195" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="196" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="200" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="201" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="202" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="203" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="204" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="208" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="209" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="210" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="211" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="212" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="216" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="217" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="218" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="219" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="220" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="224" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="225" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="226" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="227" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="228" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="232" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="233" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="234" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="235" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="236" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="240" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="241" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="242" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="243" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="244" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="248" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="249" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="250" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="251" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="252" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="256" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="257" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="258" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="259" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="260" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="264" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="265" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="266" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="267" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="268" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="272" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="273" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="274" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="30,0.3,0,0"/>
+    </filter>
+    <filter id="275" class="flare.materials.filters::ReflectionMapFilter" blendMode="add" techniqueName="null">
+      <param name="level" format="float1" value="0.2,1,1,1"/>
+      <sampler name="texture" type="cube" map="276" filter="1" wrap="0" mip="2" bias="0"/>
+    </filter>
+    <filter id="280" class="flare.materials.filters::TextureMapFilter" blendMode="normal" techniqueName="null">
+      <param name="channel" format="float1" value="0"/>
+      <param name="alpha" format="float1" value="1"/>
+      <param name="repeat" format="float2" value="1,1,1,1"/>
+      <sampler name="texture" type="2d" map="281" filter="1" wrap="1" mip="2" bias="0"/>
+      <param name="offset" format="float2" value="0,0,1,1"/>
+    </filter>
+    <filter id="282" class="flare.materials.filters::SpecularFilter" blendMode="" techniqueName="null">
+      <param name="powerLevel" format="float2" value="32,1.21,0,0"/>
+    </filter>
+  </filters>
+  <materials>
+    <material id="7" name="gms001_desk (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="8,10,11" enableLights="true"/>
+    </material>
+    <material id="15" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="16,18,19" enableLights="true"/>
+    </material>
+    <material id="23" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="24,26,27" enableLights="true"/>
+    </material>
+    <material id="31" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="32,34,35" enableLights="true"/>
+    </material>
+    <material id="39" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="40,42,43" enableLights="true"/>
+    </material>
+    <material id="47" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="48,50,51" enableLights="true"/>
+    </material>
+    <material id="55" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="56,58,59" enableLights="true"/>
+    </material>
+    <material id="63" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="64,66,67" enableLights="true"/>
+    </material>
+    <material id="71" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="72,74,75" enableLights="true"/>
+    </material>
+    <material id="79" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="80,82,83" enableLights="true"/>
+    </material>
+    <material id="87" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="88,90,91" enableLights="true"/>
+    </material>
+    <material id="95" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="96,98,99" enableLights="true"/>
+    </material>
+    <material id="103" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="104,106,107" enableLights="true"/>
+    </material>
+    <material id="111" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="112,114,115" enableLights="true"/>
+    </material>
+    <material id="119" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="120,122,123" enableLights="true"/>
+    </material>
+    <material id="127" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="128,130,131" enableLights="true"/>
+    </material>
+    <material id="135" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="136,138,139" enableLights="true"/>
+    </material>
+    <material id="143" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="144,146,147" enableLights="true"/>
+    </material>
+    <material id="151" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="152,154,155" enableLights="true"/>
+    </material>
+    <material id="159" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="160,162,163" enableLights="true"/>
+    </material>
+    <material id="167" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="168,170,171" enableLights="true"/>
+    </material>
+    <material id="175" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="176,178,179" enableLights="true"/>
+    </material>
+    <material id="183" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="184,186,187" enableLights="true"/>
+    </material>
+    <material id="191" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="192,194,195" enableLights="true"/>
+    </material>
+    <material id="199" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="200,202,203" enableLights="true"/>
+    </material>
+    <material id="207" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="208,210,211" enableLights="true"/>
+    </material>
+    <material id="215" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="216,218,219" enableLights="true"/>
+    </material>
+    <material id="223" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="224,226,227" enableLights="true"/>
+    </material>
+    <material id="231" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="232,234,235" enableLights="true"/>
+    </material>
+    <material id="239" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="240,242,243" enableLights="true"/>
+    </material>
+    <material id="247" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="248,250,251" enableLights="true"/>
+    </material>
+    <material id="255" name="gms001_chess white (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="256,258,259" enableLights="true"/>
+    </material>
+    <material id="263" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="264,266,267" enableLights="true"/>
+    </material>
+    <material id="271" name="gms001_chess blask (Vray)" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="272,274,275" enableLights="true"/>
+    </material>
+    <material id="279" name="Material #37" twoSided="false" transparent="false">
+      <shader sourceFactor="one" destFactor="zero" cullFace="back" depthCompare="lessEqual" depthWrite="true" filters="280,282" enableLights="true"/>
+    </material>
+  </materials>
+  <nodes>
+    <node id="0" name="Scene" type="scene" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,0,0,0,1,0,0,0,1,0,0,0" fps="60" antialias="2" clearColor="80,80,80,256">
+      <node id="2" name="chess2.zf3d" type="pivot" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,0,0,0,1,0,0,0,1,0,0,0">
+        <node id="3" name="Camera001" type="camera" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.6687139868736267,0,0.7435200214385986,-0.0590474009513855,0.9968420267105103,-0.05310659855604172,-0.7411710023880005,-0.07941610366106033,-0.6666020154953003,249.7239990234375,76.36599731445313,225.5500030517578" fov="76.7762" nearclip="0.1" farclip="10000"/>
+        <node id="4" name="Camera001.Target" type="pivot" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.6687139868736267,0,0.7435190081596375,0.7411710023880005,0.07941590249538422,0.6666020154953003,-0.05904719978570938,0.9968420267105103,-0.0531064011156559,47.27080154418945,54.673301696777344,43.465599060058594"/>
+        <node id="5" name="Desk" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.63372802734375,0,0,0,0.63372802734375,0,0,0,0.63372802734375,-1.6602799892425537,-0.000045776399929309264,-0.5428230166435242" min="-320.5,0,-320.5" max="320.5,30,320.5" center="0.0000152588,15,0.0000305176" radius="453.504" surfaces="6" materials="7"/>
+        <node id="13" name="White Slon 2" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-118.76599884033203,40.409400939941406,25.39699935913086" min="-43.0335,-87.6666,-97.4439" max="132.3,87.6665,192.48" center="44.6331,-0.0000152588,47.5182" radius="190.748" surfaces="14" materials="15"/>
+        <node id="21" name="White Peshka 09" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,85.31600189208984,40.33140182495117,-76.22949981689453" min="-46.022,-90.6551,-97.4439" max="135.288,90.6551,108.088" center="44.6331,-0.0000152588,5.32229" radius="164.309" surfaces="22" materials="23"/>
+        <node id="29" name="White Peshka 10" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,131.44400024414063,40.33140182495117,-25.97130012512207" min="-46.022,-90.6551,-97.4439" max="135.288,90.6551,108.088" center="44.6331,-0.0000114441,5.32229" radius="164.309" surfaces="30" materials="31"/>
+        <node id="37" name="White Slon 03" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,134.91799926757813,40.33140182495117,-75.35130310058594" min="-43.0334,-87.6666,-97.4439" max="132.3,87.6666,192.48" center="44.6331,0,47.5182" radius="190.748" surfaces="38" materials="39"/>
+        <node id="45" name="White Peshka 8" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-16.66860008239746,40.33140182495117,-76.50450134277344" min="-46.022,-90.6551,-97.4439" max="135.288,90.6552,108.088" center="44.6331,0.0000305176,5.3223" radius="164.309" surfaces="46" materials="47"/>
+        <node id="53" name="black pechka" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,30.950700759887695,40.33140182495117,73.45159912109375" min="-46.022,-90.6551,-97.4439" max="135.288,90.6551,108.088" center="44.6331,-0.0000228882,5.32229" radius="164.309" surfaces="54" materials="55"/>
+        <node id="61" name="black pechka01" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,84.768798828125,40.33140182495117,24.526100158691406" min="-46.022,-90.6551,-97.4439" max="135.288,90.6551,108.088" center="44.6331,-0.0000190735,5.32229" radius="164.309" surfaces="62" materials="63"/>
+        <node id="69" name="black pechka02" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-70.95790100097656,40.33140182495117,123.93000030517578" min="-46.0219,-90.6551,-97.4439" max="135.288,90.6552,108.088" center="44.6332,0.0000457764,5.32229" radius="164.309" surfaces="70" materials="71"/>
+        <node id="77" name="black Turret 03" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-18.11549949645996,40.33140182495117,178.8179931640625" min="-44.7308,-89.364,-97.4439" max="133.997,89.364,151.704" center="44.6331,0,27.13" radius="177.456" surfaces="78" materials="79"/>
+        <node id="85" name="black Turret 04" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.11074300110340118,0,0.1880040019750595,0.1880040019750595,0,0.11074300110340118,0,0.21819600462913513,0,73.33930206298828,46.25490188598633,128.81300354003906" min="-89.364,-89.364,-124.592" max="89.364,89.364,124.556" center="-0.0000152588,0,-0.017662" radius="177.456" surfaces="86" materials="87"/>
+        <node id="93" name="blackSlon 04" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-19.470699310302734,40.409400939941406,75.5250015258789" min="-43.0334,-87.6666,-97.4439" max="132.3,87.6666,192.48" center="44.6331,0,47.5182" radius="190.748" surfaces="94" materials="95"/>
+        <node id="101" name="White Horse 04" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.08700530230998993,0,-0.20009900629520416,-0.20009900629520416,0,-0.08700530230998993,0,0.21819600462913513,0,-189.66000366210938,40.69660186767578,186.61199951171875" min="-43.0334,-87.6686,-97.3952" max="132.304,87.6686,38.1709" center="44.6351,-0.0000152588,-29.6121" radius="141.301" surfaces="102" materials="103">
+          <node id="109" name="White Had Horse 04" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,0,0,0,1,0,0,0,1,0.3194580078125,-25,-4.664259910583496" min="-17.1571,0.0000305176,34.3952" max="129.065,50.0001,216.744" center="55.9539,25.0001,125.57" radius="119.512" surfaces="110" materials="111"/>
+        </node>
+        <node id="117" name="White Horse 2" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.0956507995724678,0,0.1961130052804947,0.1961130052804947,0,-0.09565070271492004,0,0.21819600462913513,0,-135.82899475097656,40.42890167236328,-138.27699279785156" min="-43.0335,-87.6685,-97.3952" max="132.304,87.6686,38.1709" center="44.6351,0.000038147,-29.6121" radius="141.301" surfaces="118" materials="119">
+          <node id="125" name="White Had Horse 2" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,0,0,0,1,0,0,0,1,0.31957998871803284,-24.999900817871094,-4.664259910583496" min="-17.157,0,34.3952" max="129.065,50.0001,216.744" center="55.954,25,125.57" radius="119.512" surfaces="126" materials="127"/>
+        </node>
+        <node id="133" name="White Queen" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,-179.51800537109375,84.24430084228516,-10.865799903869629" min="-75.7601,-150.856,-297.707" max="101.961,26.8647,17.2946" center="13.1004,-61.9958,-140.206" radius="201.492" surfaces="134" materials="135">
+          <node id="141" name="White Queen Korona" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,1.3113400143538456e-7,1.3113400143538456e-7,1.3113400143538456e-7,0,-1,-1.3113400143538456e-7,1,0,13.1003999710083,-61.99580001831055,27.574199676513672" min="-16,-16,-16" max="16,16,16" center="0,0,-0.0000038147" radius="27.7128" surfaces="142" materials="143"/>
+        </node>
+        <node id="149" name="White King" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,77.8135986328125,84.02790069580078,-167.04800415039063" min="-75.6891,-150.785,-297.707" max="101.89,26.7936,18.903" center="13.1004,-61.9959,-139.402" radius="202.058" surfaces="150" materials="151">
+          <node id="157" name="Circle04" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.3931620121002197,0,0,0,0,0.3931620121002197,0,-0.3931620121002197,0,13.1003999710083,-61.82339859008789,41.277000427246094" min="-54.9999,0,-54.9998" max="55,10,55" center="0.0000305176,5,0.00012207" radius="77.9422" surfaces="158" materials="159"/>
+          <node id="165" name="Line05" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,0.27643701434135437,-0.06892360001802444,0,0.06892360001802444,0.27643701434135437,12.319199562072754,-42.23360061645508,38.47800064086914" min="-16.761,0,-90.0518" max="22.2457,8,106.71" center="2.74237,4,8.32889" radius="100.375" surfaces="166" materials="167"/>
+          <node id="173" name="Line06" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,-0.27643799781799316,-0.06892360001802444,0,-0.06892360001802444,0.27643799781799316,12.319100379943848,-81.75800323486328,38.47809982299805" min="-16.7609,0,-90.0518" max="22.2458,8,106.709" center="2.74249,4,8.32886" radius="100.375" surfaces="174" materials="175"/>
+          <node id="181" name="Line07" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0,-0.2849000096321106,0,-0.27643701434135437,0,-0.06892360001802444,-0.06892360001802444,0,0.27643701434135437,-6.661769866943359,-61.214500427246094,38.47800064086914" min="-16.761,0,-90.0516" max="22.2461,7.99988,106.71" center="2.74255,3.99994,8.32904" radius="100.375" surfaces="182" materials="183"/>
+          <node id="189" name="Line08" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0,-0.2849000096321106,0,0.27643799781799316,0,-0.06892360001802444,0.06892360001802444,0,0.27643701434135437,32.86259841918945,-61.214500427246094,38.47800064086914" min="-16.761,0,-90.0518" max="22.2458,7.99988,106.71" center="2.74243,3.99994,8.32892" radius="100.375" surfaces="190" materials="191"/>
+          <node id="197" name="Circle05" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,0,0.2849000096321106,0,-0.2849000096321106,0,13.1003999710083,-61.82339859008789,14.498900413513184" min="-55,0,-54.9998" max="55,10.0001,55" center="0,5.00006,0.00012207" radius="77.9422" surfaces="198" materials="199"/>
+        </node>
+        <node id="205" name="White King01" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="-0.21819600462913513,0,0,0,0,0.21819600462913513,0,0.21819600462913513,0,127.70800018310547,84.02790069580078,189.6179962158203" min="-75.689,-150.785,-297.707" max="101.89,26.7936,18.903" center="13.1005,-61.9959,-139.402" radius="202.058" surfaces="206" materials="207">
+          <node id="213" name="Circle06" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.3931620121002197,0,0,0,0,0.3931620121002197,0,-0.3931620121002197,0,13.100500106811523,-61.82339859008789,41.27690124511719" min="-55,0.00012207,-55" max="55,10,54.9999" center="0,5.00006,-0.0000610352" radius="77.9422" surfaces="214" materials="215"/>
+          <node id="221" name="Line09" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,0.27643701434135437,-0.06892360001802444,0,0.06892360001802444,0.27643701434135437,12.319199562072754,-42.23360061645508,38.47809982299805" min="-16.7609,0,-90.0518" max="22.2458,8,106.71" center="2.74249,4,8.32898" radius="100.375" surfaces="222" materials="223"/>
+          <node id="229" name="Line10" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,-0.27643799781799316,-0.06892360001802444,0,-0.06892360001802444,0.27643799781799316,12.319199562072754,-81.75810241699219,38.47809982299805" min="-16.761,-0.000244141,-90.0516" max="22.2457,8,106.71" center="2.74237,3.99988,8.32898" radius="100.375" surfaces="230" materials="231"/>
+          <node id="237" name="Line11" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0,-0.2849000096321106,0,-0.27643799781799316,0,-0.06892360001802444,-0.06892360001802444,0,0.27643701434135437,-6.661680221557617,-61.214500427246094,38.47809982299805" min="-16.761,0.00012207,-90.0518" max="22.2458,8,106.709" center="2.74243,4.00006,8.32886" radius="100.375" surfaces="238" materials="239"/>
+          <node id="245" name="Line12" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0,-0.2849000096321106,0,0.27643799781799316,0,-0.06892360001802444,0.0689236968755722,0,0.27643799781799316,32.862701416015625,-61.214500427246094,38.47809982299805" min="-16.761,0,-90.0518" max="22.2458,7.99976,106.71" center="2.74243,3.99988,8.32892" radius="100.375" surfaces="246" materials="247"/>
+          <node id="253" name="Circle07" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.2849000096321106,0,0,0,0,0.2849000096321106,0,-0.2849000096321106,0,13.100500106811523,-61.82339859008789,14.498900413513184" min="-54.9999,0,-55" max="54.9999,10,55" center="0,5,0" radius="77.9422" surfaces="254" materials="255"/>
+        </node>
+        <node id="261" name="White Horse 03" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.0472262017428875,0,-0.21302400529384613,-0.21302400529384613,0,-0.0472262017428875,0,0.21819600462913513,0,170.7050018310547,40.43669891357422,136.85000610351563" min="-43.0333,-87.6686,-97.3951" max="132.304,87.6685,38.1709" center="44.6352,-0.0000305176,-29.6121" radius="141.301" surfaces="262" materials="263">
+          <node id="269" name="White Had Horse 03" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="1,0,0,0,1,0,0,0,1,0.31964099407196045,-25,-4.664259910583496" min="-17.157,0,34.3952" max="129.065,50,216.744" center="55.954,25,125.57" radius="119.512" surfaces="270" materials="271"/>
+        </node>
+        <node id="277" name="Line01" type="mesh" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.44811299443244934,0,-0.44811299443244934,-0.4481140077114105,0,-0.44811299443244934,0,0.63372802734375,0,209.94000244140625,11.441200256347656,-212.14300537109375" min="-970.105,-497.902,-17.9502" max="25.6999,497.902,17.7601" center="-472.203,-0.0000152588,-0.0950794" radius="704.367" surfaces="278" materials="279"/>
+        <node id="283" name="Viewport Camera" type="camera" visible="true" layer="0" castShadows="true" receiveShadows="true" transform="0.4534910023212433,0,-0.8912609815597534,0.24648700654506683,0.9609969854354858,0.12541699409484863,0.8564990162849426,-0.2765600085258484,0.43580400943756104,-234.52000427246094,75.32669830322266,-120.61499786376953" fov="91.2425" nearclip="0.1" farclip="10000"/>
+      </node>
+    </node>
+  </nodes>
+</f3d>

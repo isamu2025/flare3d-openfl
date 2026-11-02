@@ -1,0 +1,23 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Cube maps.
+ */
+
+use namespace flare.filters;
+use namespace flare.transforms;
+
+technique main() 
+{
+	samplerCube cubeMap < request = "skybox5.png" >;
+	
+	output sourceFactor = "one";
+	output destFactor = "one";
+	output cullFace = "none";
+	output depthWrite = false;
+	
+	param float alpha = 0.26;
+	
+	output vertex = transform();
+	output fragment = reflectionMap( cubeMap ) * alpha;
+}

@@ -1,0 +1,38 @@
+
+use namespace flare;
+use namespace flare.blendMode;
+use namespace flare.transforms;
+use namespace flare.filters;
+ 
+// scene.targetTexture is passed directly by the engine.
+TARGET_TEXTURE texture <wrap = WRAP_CLAMP>;
+ 
+input UV0 uv;
+
+technique template
+{
+	// interpolate function returns an interpolated variable.
+	// this way, we can calculate the uv + offset in the vertex shader instead
+	// of perform those calculations in the fragment shader.
+	float4 color = sampler2D( texture, interpolate( uv ) );
+ 
+	color += sampler2D( texture, interpolate( uv + 0.001 ) );
+	color += sampler2D( texture, interpolate( uv + 0.003 ) );
+	color += sampler2D( texture, interpolate( uv + 0.005 ) );
+	color += sampler2D( texture, interpolate( uv + 0.007 ) );
+	color += sampler2D( texture, interpolate( uv + 0.009 ) );
+	color += sampler2D( texture, interpolate( uv + 0.011 ) );
+ 
+	color += sampler2D( texture, interpolate( uv - 0.001 ) );
+	color += sampler2D( texture, interpolate( uv - 0.003 ) );
+	color += sampler2D( texture, interpolate( uv - 0.005 ) );
+	color += sampler2D( texture, interpolate( uv - 0.007 ) );
+	color += sampler2D( texture, interpolate( uv - 0.009 ) );
+	color += sampler2D( texture, interpolate( uv - 0.011 ) );
+ 
+	color.xyz = float3( ( color.r + color.g + color.b ) / 3.0 );
+	color = color / 9.5;
+ 
+	output vertex = transform();
+	output fragment = color;
+}

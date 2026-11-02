@@ -1,0 +1,37 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Multipass.
+ */
+
+use namespace flare.filters;
+use namespace flare.transforms;
+
+// passes can only be defined inside a technique.
+technique main
+{
+	pass p0 
+	{
+		param WORLD_VIEW_PROJ worldViewProj;
+		
+		param float edge = 0.5;
+		param float4 color <ui="color"> = float4(1);
+		
+		input POSITION position;
+		input NORMAL normal;
+		
+		// this pushes the vertex position to outside the geometry along the normal
+		// to simulate the cartoon edges.
+		output vertex = float4( position + normal * edge, 1 ) * worldViewProj;
+		output fragment = color;
+		// invert the cull face.
+		output cullFace = "front";
+		output depthWrite = false;
+	}
+	pass p1
+	{
+		sampler2D texture < request = "clay4.png" >;
+		output vertex = transform();
+		output fragment = envMap( texture );
+	}
+}

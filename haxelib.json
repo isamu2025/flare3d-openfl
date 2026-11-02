@@ -1,0 +1,15 @@
+{
+	"name": "flare3d",
+	"url": "https://github.com/isamu2025/flare3d-openfl",
+	"license": "MIT",
+	"tags": [ "flare3d", "3d", "stage3d", "openfl", "cross", "cpp", "flash", "game", "web", "html5" ],
+	"description": "Flare3D 3D game engine ported to Haxe and OpenFL, supporting hardware-accelerated Stage3D across HTML5 and native desktop targets.",
+	"version": "1.0.0",
+	"classPath": "src",
+	"releasenote": "Initial port of Flare3D 2.7.1 core architecture to Haxe 4.3 and OpenFL 9.5+",
+	"contributors": [ "Flare3D Team", "Antigravity" ],
+	"dependencies": {
+		"openfl": "",
+		"lime": ""
+	}
+}

@@ -1,0 +1,26 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Pixelate texture.
+ */
+
+use namespace flare.transforms;
+
+technique main() 
+{
+	// our pixelate magic function.
+	float4 pixelatedMap( sampler2D texture, float value ) 
+	{
+		input UV0 uv0;
+		interpolated float2 iUV0 = uv0;
+		float2 pixelatedUV = floor(iUV0 * value) / value;
+		return sampler2D( texture, pixelatedUV );
+	}
+	
+	sampler2D texture < request = "reflections.jpg"> ;
+	
+	param float size = 20;
+	
+	output vertex = transform();
+	output fragment = pixelatedMap( texture, size );
+}

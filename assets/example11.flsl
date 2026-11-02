@@ -1,0 +1,72 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Directional lights + specular.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+
+namespace vertexLights
+{
+	param float3 ambientColor <ui="color"> = float3( 0.1, 0.1, 0.1 );
+	
+	param WORLD world;
+	param CAM_POS camPos;
+	
+	input NORMAL normal;
+	input POSITION position;
+	
+	// start processing the lights.
+	float3 wNormal = normal * world.xyz;
+	
+	// we need to initialize lightColor, othwersie, we'll be writting a
+	// non initialized variable.
+	float3 lightColor = 0;
+	
+	// camera position minus world vertex position.
+	float3 camView = normalize( camPos - (position.xyzw * world).xyz );
+	
+	float lit( float nDotL, float nDotH, float m ) {
+		return max( nDotL, 0 ) + pow( max( nDotH, 0 ), m );
+	}
+
+	// process light directions and colors.
+	void directionalLight( float3 dir, float3 color ) {
+		float nDotH = dot( wNormal, normalize( dir + camView ) );
+		float nDotL = dot( wNormal, dir );
+		lightColor += lit( nDotL, nDotH, 80 ) * color;
+	}
+	
+	// pass the lights values to the output fragment.
+	float4 lightValues() 
+	{
+		// we're using per vertex lights, so we need to send the result color to the fragment shader 
+		// through an interpolate variable.
+		// this way, we will only need one instruction in the fragment program to output the color.
+		interpolated float4 iLightColor = float4( lightColor + ambientColor, 1 );
+		
+		return iLightColor;
+	}
+}
+
+technique test
+{   
+	param float3 lights[2];
+	lights[0] = float3( 0.5, 0.7, -0.8 );
+	lights[1] = float3( 0.7, 0.2, 0.2 );
+	
+	param float3 colors[2] <ui="color">;
+	colors[0] = float3( 0.2, 0.3, 0.4 );
+	colors[1] = float3( 0.6 );
+	
+	vertexLights.directionalLight( lights[0], colors[0] );
+	vertexLights.directionalLight( lights[1], colors[1] );
+	
+	output vertex = transform();
+	output fragment = vertexLights.lightValues(); 
+}
+
+technique test2 {
+	
+}

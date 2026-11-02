@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - Test35 AlphaSorting" package="com.flare3d.examples.test35" version="1.0.0" company="Flare3D" />
+	<app main="examples.Test35_AlphaSorting" file="Test35" path="bin" />
+	
+	<window width="800" height="450" fps="60" background="#000000" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="../src" />
+	<source path=".." />
+	<source path="." />
+	
+	<assets path="../assets" rename="." embed="false" />
+	
+	<haxelib name="openfl" />
+</project>

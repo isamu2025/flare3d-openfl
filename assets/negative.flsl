@@ -1,0 +1,10 @@
+use namespace flare;
+use namespace flare.transforms;
+
+TARGET_TEXTURE buffer;
+
+technique main 
+{
+	output vertex = transform();
+	output fragment = 1 - sampler2D( buffer, iUV0 );
+}

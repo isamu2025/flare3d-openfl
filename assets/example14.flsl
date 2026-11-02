@@ -1,0 +1,24 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Screen projected map.
+ */
+
+use namespace flare.transforms;
+
+technique main() 
+{
+	const float2 m = float2( 0.5, -0.5 );
+	
+	sampler2D texture < request = "reflections.jpg"> ;
+	
+	// get the vertex position.
+	float4 pos = transform();
+	
+	// interpolate the position to the fragment.
+	interpolated float4 iProj = pos;
+	
+	output vertex = pos;
+	
+	output fragment = sampler2D( texture, iProj.xy / iProj.ww * m + 0.5 );
+}

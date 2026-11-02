@@ -1,0 +1,89 @@
+/**
+ * @author Ariel Nehmad
+ */
+
+ use namespace flare;
+ use namespace flare.transforms;
+ 
+// blur constants.
+const float TEX_SIZE = 512;
+const float blurSize = 1 / TEX_SIZE;
+const float2 hSize0 = float2( blurSize, 0 );
+const float2 hSize1 = float2( blurSize * 2, 0 );
+const float2 vSize0 = float2( 0, blurSize );
+const float2 vSize1 = float2( 0, blurSize * 2 );
+
+// horizontal blur.
+float4 blurX( sampler2D texture ) {
+	float4 sum;
+	interpolated float2 i0 = uv0 - hSize0;
+	interpolated float2 i1 = uv0 + hSize0;
+	interpolated float2 i2 = uv0 - hSize1;
+	interpolated float2 i3 = uv0 + hSize1;
+	sum  = sampler2D( texture, i0 );
+	sum += sampler2D( texture, i1 );
+	sum += sampler2D( texture, i2 );
+	sum += sampler2D( texture, i3 );
+	return float4( sum.rgb * 0.25, 1 );
+}
+
+// vertical blur.
+float4 blurY( sampler2D texture ) {
+   float4 sum;
+	interpolated float2 i0 = uv0 - vSize0;
+	interpolated float2 i1 = uv0 + vSize0;
+	interpolated float2 i2 = uv0 - vSize1;
+	interpolated float2 i3 = uv0 + vSize1;
+	sum  = sampler2D( texture, i0 );
+	sum += sampler2D( texture, i1 );
+	sum += sampler2D( texture, i2 );
+	sum += sampler2D( texture, i3 );
+   return float4( sum.rgb * 0.25, 1 );
+}
+
+
+technique main() 
+{
+	// temporal texture to hold the blur.
+	sampler2D blurH < bias = 0, width = 512, height = 512, optimizeForRenderToTexture = true >;
+	// texture to blur.
+	sampler2D inputTexture;
+	sampler2D outputTexture;
+	
+	// the result will be mixed with the main scene render.
+	output depthWrite = false;
+	output depthCompare = "always";
+	
+	pass blur_p0 {
+		output target = blurH;
+		output vertex = position.xyzw;
+		output fragment = blurX( inputTexture );
+	}
+	pass blur_p1 {
+		output target = outputTexture;
+		output vertex = position.xyzw;
+		output fragment = blurY( blurH );
+	}
+	/*
+	pass blur_p2 {
+		output target = blurH;
+		output vertex = position.xyzw;
+		output fragment = blurX( outputTexture );
+	}
+	pass blur_p3 {
+		output target = outputTexture;
+		output vertex = position.xyzw;
+		output fragment = blurY( blurH );
+	}
+	pass blur_p4 {
+		output target = blurH;
+		output vertex = position.xyzw;
+		output fragment = blurX( outputTexture );
+	}
+	pass blur_p5 {
+		output target = outputTexture;
+		output vertex = position.xyzw;
+		output fragment = blurY( blurH );
+	}
+	*/
+}

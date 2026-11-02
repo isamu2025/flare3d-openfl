@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - TestInputKeys" package="com.flare3d.examples.testinputkeys" version="1.0.0" company="Flare3D" />
+	<app main="TestInputKeys" file="TestInputKeys" path="bin" />
+	
+	<window width="800" height="600" fps="60" background="#1a1a1a" resizable="true" />
+	
+	<source path="../src" />
+	<source path=".." />
+	<source path="." />
+	
+	<haxelib name="openfl" />
+</project>

@@ -1,0 +1,16 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Basic texturing.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+
+technique main() 
+{
+	sampler2D texture;
+	
+	output vertex = transform();
+	output fragment = textureMap( texture );
+}

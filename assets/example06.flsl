@@ -1,0 +1,25 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Alpha mask / kill instruction.
+ */
+
+use namespace flare.filters;
+use namespace flare.transforms;
+
+technique main() 
+{
+	sampler2D texture < request = "tree.png" >;
+	
+	param float threshold = 0.5
+
+	float4 color = textureMap( texture );
+	
+	// clip if value - threshold < 0.
+	// you can use here any component (xyzw | rgba).
+	kill( color.a - threshold );
+	
+	output fragment = color;
+	output cullFace = "none";
+	output vertex = transform();
+}

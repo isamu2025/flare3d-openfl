@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - Test02 Basics" package="com.flare3d.examples.test02" version="1.0.0" company="Flare3D" />
+	<app main="examples.Test02_The_Basics2" file="Test02" path="bin" />
+	
+	<window width="800" height="600" fps="60" background="#1a1a1a" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="../src" />
+	<source path=".." />
+	<source path="." />
+	
+	<assets path="../assets" rename="." embed="false" />
+	
+	<haxelib name="openfl" />
+	
+</project>

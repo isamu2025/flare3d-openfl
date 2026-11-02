@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Flare3D OpenFL - Hello Cube" package="com.flare3d.samples.hellocube" version="1.0.0" company="Flare3D" />
+	<app main="Main" file="HelloCube" path="bin" />
+	
+	<window width="800" height="600" fps="60" background="#1a1a1a" resizable="true" />
+	<window depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="src" />
+	
+	<haxelib name="openfl" />
+	<haxelib name="flare3d" />
+	
+</project>

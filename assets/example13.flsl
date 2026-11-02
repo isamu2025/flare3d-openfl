@@ -1,0 +1,30 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Displacement map.
+ */
+
+use namespace flare.transforms;
+
+sampler2D texture < request = "reflections.jpg"> ;
+sampler2D displacement < request = "displacement.jpg" > ;
+
+technique main() 
+{
+	
+	input UV0 uv0;
+	
+	interpolated float2 iUV0 = uv0;
+	
+	param TIME time;
+	
+	// this uses the values from one texture to displace the 
+	// uv's on the other texture.
+	float4 offset = sampler2D( displacement, iUV0 + time.ww );
+	
+	output vertex = transform();
+	output fragment = sampler2D( texture, iUV0 + offset.yz );
+	
+	output sourceFactor = "one";
+	output destFactor = "oneMinusSourceAlpha";
+}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - Yellow Planet" package="com.flare3d.samples.yellowplanet" version="1.0.0" company="Flare3D" />
+	<app main="YellowPlanet_Bonus" file="YellowPlanet" path="bin" />
+	
+	<window width="1280" height="720" fps="60" background="#000000" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="src" />
+	<source path="../../src" />
+	
+	<assets path="assets" rename="." embed="true" exclude="*.f3d|*.zf3d" />
+	<assets path="assets" rename="." embed="false" include="*.f3d|*.zf3d" />
+	
+	<haxelib name="openfl" />
+</project>

@@ -1,0 +1,35 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Average radial blur.
+ */
+
+use namespace flare.transforms;
+use namespace flare;
+
+const float samples = 30;
+
+technique main() 
+{
+	sampler2D inputTexture;
+	sampler2D outputTexture;
+	
+	param float sampleDistance = 0.6;
+	param float intensity = 2;
+	param float2 center = float2( 0.5, 0.5 );
+	
+	float2 dir = ( center - iUV0 );
+	float4 sum = sampler2D( inputTexture, iUV0 );
+	
+	#for ( float i = 0; i < samples; i++ )
+		sum += sampler2D( inputTexture, iUV0 + dir * const( i * (1  / samples ) ) * sampleDistance );
+	
+	output target = outputTexture;
+	output vertex = transform();
+	output fragment = sum / samples * intensity;
+	
+	output sourceFactor = "one";
+	output destFactor = "one";
+	output depthWrite = false;
+	output depthCompare = "always"; 
+}

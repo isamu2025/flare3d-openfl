@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	
+	<meta title="Flare3D OpenFL - Physics and Animation" package="com.flare3d.samples.physics" version="1.0.0" company="Flare3D" />
+	<app main="Main" file="PhysicsAndAnim" path="bin" />
+	
+	<window width="960" height="600" fps="60" background="#141419" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="src" />
+	<source path="../../src" />
+	
+	<haxelib name="openfl" />
+	
+</project>

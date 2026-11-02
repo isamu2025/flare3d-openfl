@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<f3d version="1">
+	<animations>
+		<animation id="0" source="_0" format="float3x4"/>
+		<animation id="1" source="_1" format="float3x4"/>
+		<animation id="2" source="_2" format="float3x4"/>
+		<animation id="3" source="_3" format="float3x4"/>
+		<animation id="4" source="_4" format="float3x4"/>
+		<animation id="5" source="_5" format="float3x4"/>
+		<animation id="6" source="_6" format="float3x4"/>
+		<animation id="7" source="_7" format="float3x4"/>
+		<animation id="8" source="_8" format="float3x4"/>
+		<animation id="9" source="_9" format="float3x4"/>
+		<animation id="10" source="_10" format="float3x4"/>
+		<animation id="11" source="_11" format="float3x4"/>
+		<animation id="12" source="_12" format="float3x4"/>
+		<animation id="13" source="_13" format="float3x4"/>
+		<animation id="14" source="_14" format="float3x4"/>
+		<animation id="15" source="_15" format="float3x4"/>
+		<animation id="16" source="_16" format="float3x4"/>
+		<animation id="17" source="_17" format="float3x4"/>
+		<animation id="18" source="_18" format="float3x4"/>
+		<animation id="19" source="_19" format="float3x4"/>
+		<animation id="20" source="_20" format="float3x4"/>
+		<animation id="21" source="_21" format="float3x4"/>
+	</animations>
+	<modifiers>
+		<modifier id="0" type="skin" target="0" bonesPerVertex="1" bones="2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20" surfaces="20"/>
+	</modifiers>
+	<surfaces>
+		<surface id="0" source="0" sizePerVertex="8" inputs="POSITION,NORMAL,UV0" formats="float3,float3,float2"/>
+		<surface id="1" source="1" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="2" source="2" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="3" source="3" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="4" source="4" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="5" source="5" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="6" source="6" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="7" source="7" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="8" source="8" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="9" source="9" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="10" source="10" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="11" source="11" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="12" source="12" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="13" source="13" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="14" source="14" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="15" source="15" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="16" source="16" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="17" source="17" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="18" source="18" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="19" source="19" sizePerVertex="6" inputs="POSITION,NORMAL" formats="float3,float3"/>
+		<surface id="20" name="20" sizePerVertex="2" inputs="SKIN_WEIGHTS,SKIN_INDICES" formats="float1,float1" source="20"/>
+	</surfaces>
+	<maps>
+		<map id="0" type="rgba" channel="0" source="animal3.jpg">
+			<uOffset value="0.0"/>
+			<vOffset value="0.0"/>
+			<uRepeat value="1.0"/>
+			<vRepeat value="1.0"/>
+		</map>
+	</maps>
+	<materials>
+		<material id="0" name="Material #360" twoSided="false" opacity="100.0">
+			<diffuse color="149.94,149.94,149.94" map="0" level="100.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="1" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="0.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="2" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,246.0,43.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="3" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,246.0,43.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="4" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,246.0,43.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="5" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,209.0,83.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="6" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,209.0,83.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="7" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="79.0,209.0,83.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="8" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="7.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="9" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="55.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="10" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="128.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="11" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="200.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="12" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="248.0,0.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="13" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="0.0,4.0,0.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="14" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="1.0,29.0,1.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="15" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="3.0,67.0,3.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="16" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="5.0,105.0,5.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="17" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="6.0,130.0,6.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="18" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="6.0,134.0,6.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+		<material id="19" name="Standardmaterial" twoSided="false" opacity="100.0">
+			<diffuse color="6.0,134.0,6.0"/>
+			<specular color="229.5,229.5,229.5" level="0.0" glossiness="10.0"/>
+		</material>
+	</materials>
+	<nodes>
+		<node id="0" name="Line01" type="mesh" surfaces="0" materials="0" min="-78.9897,-70.502,-40.4101" max="80.0017,77.4187,33.6387" center="0.505993,3.45833,-3.38566" radius="114.719" transform="0.0,0.0,1.0,0.0,1.0,0.0,-1.0,0.0,0.0,5.23473e-007,65.1779,11.9757"/>
+		<node id="1" name="Character01" type="helper" class="catparent" transform="0.0,1.0,1.62921e-007,-1.0,0.0,-2.38419e-007,-2.38419e-007,-1.62921e-007,1.0,0.0,0.0,0.0"/>
+		<node id="2" name="CATRigHub01" type="mesh" surfaces="1" materials="1" min="-5.99474,-11.9895,-14.9869" max="5.99474,11.9895,14.9869" center="9.53674e-007,4.76837e-007,0.0" radius="20.107" transform="-1.19209e-007,1.0,1.63913e-007,-0.984808,0.0,-0.173648,-0.173648,-1.63913e-007,0.984808,2.36968e-007,18.4371,1.89116" animation="1">
+			<node id="3" name="CATRigLLeg1" type="mesh" surfaces="2" materials="2" min="0.0,-2.98178,-2.98178" max="12.6389,2.98178,2.98178" center="6.31947,1.90735e-006,1.19209e-007" radius="7.59722" transform="-0.844121,0.531455,0.0708211,-0.530343,-0.808266,-0.255816,-0.0787126,-0.253499,0.964128,5.72205e-006,11.9895,1.19209e-007" animation="2">
+				<node id="4" name="CATRigLLeg2" type="mesh" surfaces="3" materials="3" min="-2.38419e-007,-2.98178,-2.98178" max="12.6389,2.98178,2.98178" center="6.31947,0.0,2.38419e-007" radius="7.59722" transform="0.301895,2.01166e-007,-0.953341,-1.19209e-007,1.0,0.0,0.953341,2.38419e-007,0.301895,12.6389,0.0,2.38419e-007" animation="3">
+					<node id="5" name="CATRigLLegAnkle" type="mesh" surfaces="4" materials="4" min="9.53674e-007,-2.48481,-1.24241" max="7.45445,2.48482,1.24241" center="3.72723,9.53674e-007,2.38419e-007" radius="4.64866" transform="0.877686,0.000449806,0.479237,-0.000438891,1.0,-0.000134706,-0.479237,-9.20892e-005,0.877686,12.6389,0.0,1.43051e-006" animation="4"/>
+				</node>
+			</node>
+			<node id="6" name="CATRigRLeg1" type="mesh" surfaces="5" materials="5" min="4.76837e-007,-2.98178,-2.98178" max="12.6389,2.98178,2.98178" center="6.31947,9.53674e-007,0.0" radius="7.59722" transform="-0.177628,-0.603303,0.77748,0.531104,-0.723879,-0.440371,0.828478,0.334701,0.448998,-3.8147e-006,-11.9895,1.19209e-007" animation="5">
+				<node id="7" name="CATRigRLeg2" type="mesh" surfaces="6" materials="6" min="9.53674e-007,-2.98178,-2.98178" max="12.6389,2.98178,2.98178" center="6.31947,1.90735e-006,0.0" radius="7.59722" transform="0.619828,0.0,-0.784738,0.0,1.0,0.0,0.784738,0.0,0.619828,12.6389,0.0,0.0" animation="6">
+					<node id="8" name="CATRigRLegAnkle" type="mesh" surfaces="7" materials="7" min="-4.76837e-007,-2.48482,-1.24241" max="7.45445,2.48482,1.24241" center="3.72722,9.53674e-007,0.0" radius="4.64867" transform="0.775918,-0.613927,0.145067,0.604427,0.789352,0.107665,-0.180607,0.00414354,0.983547,12.6389,-1.90735e-006,0.0" animation="7"/>
+				</node>
+			</node>
+			<node id="9" name="CATRigTail1" type="mesh" surfaces="8" materials="8" min="0.0,-5.76065,-1.95998" max="9.36707,5.76065,1.95999" center="4.68354,2.38419e-007,9.53674e-007" radius="7.67868" transform="-0.0761718,0.00487972,-0.997083,-4.75342e-007,0.999988,0.00489393,0.997094,0.000373138,-0.076171,-7.03494,3.48687e-006,-18.5155" animation="8">
+				<node id="10" name="CATRigTail2" type="mesh" surfaces="9" materials="9" min="0.0,-5.21125,-1.77306" max="9.93926,5.21125,1.77306" center="4.96963,4.76837e-007,0.0" radius="7.41607" transform="0.96251,0.0308389,-0.269487,-0.0327227,0.999461,-0.00249979,0.269265,0.0112244,0.963001,9.36707,2.98023e-007,9.53674e-007" animation="9">
+					<node id="11" name="CATRigTail3" type="mesh" surfaces="10" materials="10" min="0.0,-4.38192,-1.49089" max="9.93926,4.38192,1.49089" center="4.96963,-2.38419e-007,-9.53674e-007" radius="6.79126" transform="0.99508,0.0478409,0.0867503,-0.0465417,0.998773,-0.0169398,-0.0874542,0.0128189,0.996086,9.93927,5.96046e-007,0.0" animation="10">
+						<node id="12" name="CATRigTail4" type="mesh" surfaces="11" materials="11" min="0.0,-3.55258,-1.20872" max="11.3642,3.55258,1.20872" center="5.6821,1.19209e-007,9.53674e-007" radius="6.80942" transform="0.995071,0.0487718,0.0863377,-0.047841,0.998773,-0.0128188,-0.0868569,0.00862519,0.996183,9.93926,-2.38419e-007,-1.90735e-006" animation="11">
+							<node id="13" name="CATRigTail5" type="mesh" surfaces="12" materials="12" min="0.0,-3.00319,-1.02179" max="9.93926,3.00319,1.0218" center="4.96963,0.0,0.0" radius="5.8958" transform="0.984189,0.0328179,0.174054,-0.0323165,0.999461,-0.00571502,-0.174148,-1.49275e-007,0.98472,11.3642,0.0,0.0" animation="12"/>
+						</node>
+					</node>
+				</node>
+			</node>
+			<node id="14" name="CATRigSpineCATRigSpine1" type="mesh" surfaces="13" materials="13" min="0.0,-9.2312,-7.44101" max="18.8404,9.2312,7.44101" center="9.4202,0.0,0.0" radius="15.1434" transform="0.987795,0.00130279,-0.155751,0.000224414,0.999952,0.0097874,0.155756,-0.00970291,0.987748,0.0,7.15256e-007,-2.46944" animation="13">
+				<node id="15" name="CATRigSpine2" type="mesh" surfaces="14" materials="14" min="3.8147e-006,-7.20595,-5.80852" max="21.1718,7.20595,5.80852" center="10.5859,0.0,-4.76837e-007" radius="14.0615" transform="0.96573,0.0265652,-0.258186,-0.0101204,0.997846,0.0648157,0.259352,-0.0599815,0.963919,18.8404,0.0,2.38419e-007" animation="14">
+					<node id="16" name="CATRigSpine3" type="mesh" surfaces="15" materials="15" min="0.0,-4.93219,-3.97571" max="25.0639,4.93219,3.97571" center="12.5319,2.38419e-007,-4.76837e-007" radius="14.0422" transform="0.936539,0.00631265,0.350506,-0.0404915,0.995094,0.0902702,-0.348216,-0.098734,0.9322,21.1718,0.0,-9.53674e-007" animation="15">
+						<node id="17" name="CATRigSpine4" type="mesh" surfaces="16" materials="16" min="-7.62939e-006,-4.93219,-3.97571" max="21.5489,4.93219,3.97571" center="10.7745,-2.38419e-007,0.0" radius="12.4989" transform="0.99038,-0.0074269,0.138174,-0.00631268,0.995094,0.0987341,-0.138229,-0.0986565,0.985474,25.0639,-1.19209e-007,0.0" animation="16">
+							<node id="18" name="CATRigSpine5" type="mesh" surfaces="17" materials="17" min="0.0,-4.93219,-3.9757" max="21.3025,4.93219,3.97571" center="10.6512,0.0,5.72205e-006" radius="12.3928" transform="0.877774,-0.0359111,0.477728,0.00523394,0.997846,0.0653919,-0.479047,-0.0548989,0.876071,21.5489,-2.38419e-007,0.0" animation="17">
+								<node id="19" name="CATRigHub02" type="mesh" surfaces="18" materials="18" min="-6.94885,-9.86439,-6.21204" max="6.94885,9.86439,6.21204" center="0.0,-4.76837e-007,-2.38419e-007" radius="13.5714" transform="0.837683,-0.000224318,-0.546157,0.00553337,0.999952,0.00807624,0.546129,-0.0097874,0.837644,21.3025,0.0,7.62939e-006" animation="18">
+									<node id="20" name="CATRigHub02Bone01" type="mesh" surfaces="19" materials="19" min="3.8147e-006,-15.9249,-15.9249" max="63.6996,15.9249,15.9249" center="31.8498,-4.76837e-007,-3.8147e-006" radius="39.0079" transform="-0.422618,-1.93715e-007,0.906308,2.04928e-007,1.0,2.68221e-007,-0.906308,2.6077e-007,-0.422618,2.91522,-2.6226e-006,12.9954" animation="19"/>
+								</node>
+							</node>
+						</node>
+					</node>
+				</node>
+			</node>
+		</node>
+		<node id="21" name="CATRigLLegPlatform" type="helper" class="iktarget" transform="0.0,0.961897,0.273412,-1.0,1.19209e-007,-2.5332e-007,-2.38419e-007,-0.273412,0.961897,-24.9197,1.35876,-17.7781"/>
+		<node id="22" name="CATRigRLegPlatform" type="helper" class="iktarget" transform="-1.19209e-007,0.99948,-0.0322421,-1.0,-1.19209e-007,-2.38419e-007,-2.38419e-007,0.0322421,0.99948,25.2496,0.160228,21.7671"/>
+		<node id="23" name="Viewport Camera" type="camera" class="freecamera" fov="87.0" nearclip="0.1" farclip="10000.0" active="true" transform="-0.601815,0.0,-0.798636,0.411327,0.857168,-0.309958,0.684564,-0.515038,-0.515856,-113.232,156.375,100.359"/>
+	</nodes>
+</f3d>

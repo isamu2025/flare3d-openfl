@@ -1,0 +1,27 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Use of semantics.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+
+technique main() 
+{
+	// semantic are user data types that are useful to bind
+	// external data values into the shaders.
+	// semantics can be used with parameters, samplers or input variables.
+	#semantic TIME float4;
+	#semantic MOUSE float2;
+	
+	// these parameters contains external values 
+	// that are externally updated.
+	param TIME time;
+	param MOUSE mouse;
+	
+	sampler2D texture < request = "cross.jpg" >;
+	
+	output vertex = transform();
+	output fragment = textureMap( texture, mouse.xy / 100, time.yy );
+}

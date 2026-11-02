@@ -1,0 +1,19 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Inputs.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+
+technique main() 
+{
+	input NORMAL normal;
+	
+	// interpolated variables can be defined inline (or not).
+	interpolated float4 iNormal = float4( normal, 1 );
+	
+	output vertex = transform();
+	output fragment = iNormal;
+}

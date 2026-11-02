@@ -1,0 +1,23 @@
+use namespace flare;
+use namespace flare.transforms;
+use namespace flare.filters;
+
+#semantic RANDOM float4;
+
+TARGET_TEXTURE buffer;
+sampler2D noise < request = "noise.png" >
+
+param RANDOM random;
+param float4 color = float4( 0.1, 1.55, 0.2, 1 );
+
+technique main 
+{
+	output vertex = transform();
+	
+	float4 c = textureMap( buffer );
+	float4 n = textureMap( noise, float2(5), random.xy );
+	
+	c.rgb = dot( const( 0.30, 0.59, 0.11 ), c.rgb );
+	
+	output fragment = saturate( c * color ) * n;
+}

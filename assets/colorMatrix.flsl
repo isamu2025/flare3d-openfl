@@ -1,0 +1,41 @@
+
+use namespace flare;
+use namespace flare.blendMode;
+use namespace flare.transforms;
+use namespace flare.filters;
+
+// scene.targetTexture is passed directly by the engine.
+TARGET_TEXTURE texture;
+
+param float blendValue = 1;
+
+technique sepia 
+{
+	const float4 sepia[4];
+	sepia[0] = float4( 0.3930000066757202, 0.7689999938011169, 0.1889999955892563, 0 ); 
+	sepia[1] = float4( 0.3490000069141388, 0.6859999895095825, 0.1679999977350235, 0 );
+	sepia[2] = float4( 0.2720000147819519, 0.5339999794960022, 0.1309999972581863, 0 );
+	sepia[3] = float4( 0, 0, 0, 1 );
+	
+	output vertex = transform();
+	
+	float4 color = textureMap( texture );
+	
+	output fragment = mix( color * sepia, color, blendValue );
+}
+
+technique gray
+{
+	const float4 gray[4];
+	gray[0] = float4( 0.212671, 0.715160, 0.072169, 0 ); 
+	gray[1] = float4( 0.212671, 0.715160, 0.072169, 0 );
+	gray[2] = float4( 0.212671, 0.715160, 0.072169, 0 );
+	gray[3] = float4( 0, 0, 0, 1 );
+	
+	output vertex = transform();
+	
+	float4 color = textureMap( texture );
+	
+	output fragment = mix( color * gray, color, blendValue );
+}
+

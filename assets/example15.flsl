@@ -1,0 +1,28 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Mirror + Environment map that works also on planar surfaces.
+ */
+
+use namespace flare;
+use namespace flare.transforms;
+
+float4 reflectionMap( sampler2D texture ) {
+	
+	// position, normal, and worldView values are in flare3d namespace, since we are
+	// using flare3d namespace, we can directly access to these variables.
+	interpolated float3 wPosition = (position.xyzw * worldView).xyz;
+	interpolated float3 wNormal = normal * worldView.xyz;
+	
+	const float2 m = float2( 0.5, -0.5 );
+	
+	return sampler2D( texture, normalize( reflect( wPosition, wNormal ) ).xy * m + 0.5 );
+}
+
+technique main() 
+{
+	sampler2D texture < request = "material3.jpg" > ;
+	
+	output vertex = transform();
+	output fragment = reflectionMap( texture );
+}

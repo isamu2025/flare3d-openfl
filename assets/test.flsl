@@ -1,0 +1,9 @@
+
+use namespace flare.filters;
+technique main
+{
+	sampler2D texture;
+	param float color = 0.3;
+	output vertex = flare.transforms.transform();
+	output fragment = envMap(texture) * color; 
+}

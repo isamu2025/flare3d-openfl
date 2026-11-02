@@ -1,0 +1,17 @@
+/**
+ * Flare3D Shader Language v2.0.
+ * 
+ * Cube maps.
+ */
+
+use namespace flare.transforms;
+use namespace flare.filters;
+use namespace flare;
+
+technique main() 
+{
+	samplerCube cubeMap <request = "skybox2b.png">;
+	
+	output vertex = transform();
+	output fragment = reflectionMap( cubeMap );
+}

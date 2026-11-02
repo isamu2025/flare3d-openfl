@@ -1,0 +1,15 @@
+
+use namespace flare;
+use namespace flare.transforms;
+
+sampler2D texture <wrap = 0>;
+
+technique main 
+{
+	float4 sPos = position.xyzw * worldViewProj;
+	
+	interpolated float4 isPos = sPos;
+	
+	output vertex = transform();
+	output fragment = sampler2D( texture, isPos.xy / isPos.w * const( 0.5, -0.5 ) + 0.5 );
+}

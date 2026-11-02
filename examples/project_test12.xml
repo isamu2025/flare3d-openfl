@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project>
+	<meta title="Flare3D OpenFL - Test12 Mouse And Planes" package="com.flare3d.examples.test12" version="1.0.0" company="Flare3D" />
+	<app main="examples.Test12_Mouse_And_Planes" file="Test12" path="bin" />
+	
+	<window width="800" height="600" fps="60" background="#1a1a1a" resizable="true" />
+	<window hardware="true" allow-shaders="true" require-shaders="true" vsync="true" depth-buffer="true" stencil-buffer="true" antialiasing="4" />
+	
+	<source path="../src" />
+	<source path=".." />
+	<source path="." />
+	
+	<assets path="../assets" rename="." embed="false" />
+	
+	<haxelib name="openfl" />
+</project>
